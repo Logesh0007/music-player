@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 835px;
+    overflow: hidden;
+}
+
+/* Main container */
+#container{
+    background-color: #0584CC;
+    width: 375px;
+    height: 812px;
+    transform: translate(500px, 20px);
+    
+}
+
+/* Header */
+/* menu button */
+#menu{
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 23px;
+    top: 42px;
+}
+
+/* app name */
+#name{
+    position: absolute;
+    width: 71px;
+    height: 27px;
+    left: 152px;
+    top: 37px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+/* search button */
+#search_button{
+    position: absolute;
+    left: 334px;
+    right: 20px;
+    top: 40px;
+    bottom: 751px;
+}
+
+/* Horizontal line */
+hr{
+    position: absolute;
+    width: 337px;
+    left: 22px;
+    top: 80px;
+    opacity: 50%;
+}
+
+/* Browse Section */
+#browse{
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    left: 15px;
+    top: 86px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+/* Browse list */
+#browse_list{
+    position: absolute;
+    height: 150px;
+    left: 15px;
+    top: 128px;
+    width: 360px;
+    overflow-y: hidden;
+}
+
+#browse_list #movie_det{
+    display: flex;
+    list-style: none;
+}
+
+#browse_list #movie_det::-webkit-scrollbar, #rec_list::-webkit-scrollbar,
+#browse_list::-webkit-scrollbar{
+    display: none;  
+}
+
+/* Movie templates */
+#browse_list #movie_det li img{
+    width: 105px;
+    height: 113px;
+    margin-right: 6px;
+    border-radius: 10px;
+}
+
+/* Movie titles */
+#browse_list #movie_det li h4{
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    top: 117px;
+    height: 17px;
+}
+
+#browse_list #movie_det li:nth-child(1) h4{
+    width: 62px;
+}
+#browse_list #movie_det li:nth-child(2) h4{
+    width: 45px;
+    left: 111px;
+}
+#browse_list #movie_det li:nth-child(3) h4{
+    width: 31px;
+    left: 222px;
+}
+#browse_list #movie_det li:nth-child(4) h4{
+    width: 46px;
+    left: 333px;
+}
+#browse_list #movie_det li:nth-child(5) h4{
+    width: 42px;
+    left: 444px;
+}
+#browse_list #movie_det li:nth-child(6) h4{
+    width: 27px;
+    left: 555px;
+}
+#browse_list #movie_det li:nth-child(7) h4{
+    width: 35px;
+    left: 666px;
+}
+
+/* Music director names */
+#browse_list #movie_det li h5{
+    position: absolute;
+    height: 11px;
+    top: 133px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#browse_list #movie_det li:nth-child(1) h5{
+    width: 75px;
+    left: 2px;
+}
+#browse_list #movie_det li:nth-child(2) h5{
+    width: 31px;
+    left: 113px;
+}
+#browse_list #movie_det li:nth-child(3) h5{
+    width: 24px;
+    left: 224px;
+}
+#browse_list #movie_det li:nth-child(4) h5{
+    width: 75px;
+    left: 335px;
+}
+#browse_list #movie_det li:nth-child(5) h5{
+    width: 46px;
+    left: 446px;
+}
+#browse_list #movie_det li:nth-child(6) h5{
+    width: 46px;
+    left: 557px;
+}
+#browse_list #movie_det li:nth-child(7) h5{
+    width: 31px;
+    left: 668px;
+}
+
+/* Mid headings */
+
+#mid_headings ul{
+    display: flex;
+    list-style: none;
+}
+
+#mid_headings ul li{
+    position: absolute;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+#mid_headings ul li:nth-child(1){
+    font-size: 22px;
+    width: 189px;
+    height: 25px;
+    left: 17px;
+    top: 282px;
+}
+#mid_headings ul li:nth-child(2){
+    width: 50px;
+    height: 16px;
+    left: 216px;
+    top: 289px;
+    opacity: 50%;
+}
+#mid_headings ul li:nth-child(3){
+    width: 40px;
+    height: 16px;
+    left: 278px;
+    top: 289px;
+    opacity: 50%;
+}
+#mid_headings ul li:nth-child(4){
+    width: 43px;
+    height: 20px;
+    left: 331px;
+    top: 289px;
+    opacity: 50%;
+    overflow: hidden;
+}
+
+/* Recommendation section */
+#rec_list{
+    position: absolute;
+    width: 342px;
+    height: 415px;
+    left: 17px;
+    top: 324px;
+    overflow-y: scroll;
+}
+
+#rec_list ul{
+    list-style: none;
+}
+
+/* Recommendation movie templates */
+#rec_list ul li img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    left: 2px;
+}
+
+#rec_list ul li:nth-child(2) img{
+    top: 50px;
+}
+#rec_list ul li:nth-child(3) img{
+    top: 100px;
+}
+#rec_list ul li:nth-child(4) img{
+    top: 150px;
+}
+#rec_list ul li:nth-child(5) img{
+    top: 200px;
+}
+#rec_list ul li:nth-child(6) img{
+    top: 250px;
+}
+#rec_list ul li:nth-child(7) img{
+    top: 300px;
+}
+#rec_list ul li:nth-child(8) img{
+    top: 350px;
+}
+#rec_list ul li:nth-child(9) img{
+    top: 400px;
+}
+#rec_list ul li:nth-child(10) img{
+    top: 450px;
+}
+#rec_list ul li:nth-child(11) img{
+    top: 500px;
+}
+#rec_list ul li:nth-child(12) img{
+    top: 550px;
+}
+
+/* Recommendation movie names */
+#rec_list ul li h2{
+    position: absolute;
+    height: 22px;
+    left: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+#rec_list ul li:nth-child(1) h2{
+    width: 82px;
+    top: 2px;
+}
+#rec_list ul li:nth-child(2) h2{
+    width: 52px;
+    top: 50px;
+}
+#rec_list ul li:nth-child(3) h2{
+    width: 53px;
+    top: 100px;
+}
+#rec_list ul li:nth-child(4) h2{
+    width: 150px;
+    top: 150px;
+}
+#rec_list ul li:nth-child(5) h2{
+    width: 43px;
+    top: 200px;
+}
+#rec_list ul li:nth-child(6) h2{
+    width: 29px;
+    top: 250px;
+}
+#rec_list ul li:nth-child(7) h2{
+    width: 43px;
+    top: 300px;
+}
+#rec_list ul li:nth-child(8) h2{
+    width: 170px;
+    top: 350px;
+}
+#rec_list ul li:nth-child(9) h2{
+    width: 42px;
+    top: 400px;
+}
+#rec_list ul li:nth-child(10) h2{
+    width: 82px;
+    top: 450px;
+}
+#rec_list ul li:nth-child(11) h2{
+    width: 52px;
+    top: 500px;
+}
+#rec_list ul li:nth-child(12) h2{
+    width: 53px;
+    top: 550px;
+}
+
+/* Recommendation movie's music directors */
+#rec_list ul li h4{
+    position: absolute;
+    height: 15px;
+    left: 53px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#rec_list ul li:nth-child(1) h4{
+    width: 31px;
+    top: 22px;
+}
+#rec_list ul li:nth-child(2) h4{
+    width: 41px;
+    top: 72px;
+}
+#rec_list ul li:nth-child(3) h4{
+    width: 41px;
+    top: 122px;
+}
+#rec_list ul li:nth-child(4) h4{
+    width: 70px;
+    top: 172px;
+}
+#rec_list ul li:nth-child(5) h4{
+    width: 41px;
+    top: 222px;
+}
+#rec_list ul li:nth-child(6) h4{
+    width: 63px;
+    top: 272px;
+}
+#rec_list ul li:nth-child(7) h4{
+    width: 75px;
+    top: 322px;
+}
+#rec_list ul li:nth-child(8) h4{
+    width: 75px;
+    top: 372px;
+}
+#rec_list ul li:nth-child(9) h4{
+    width: 31px;
+    top: 422px;
+}
+#rec_list ul li:nth-child(10) h4{
+    width: 75px;
+    top: 472px;
+    
+}
+#rec_list ul li:nth-child(11) h4{
+    width: 41px;
+    top: 522px;
+}
+#rec_list ul li:nth-child(12) h4{
+    width: 41px;
+    top: 572px;
+}
+
+/* Footer */
+#now_playing_bar{
+    position: absolute;
+    width: 375px;
+    height: 75px;
+    top: 739px;
+    background: #FFFFFF;
+    box-shadow: 0px -10px 18px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 22px 22px 0px 0px;
+}
+
+/* Footer song template */
+#now_playing_bar #song_temp{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 15px;
+    top: 13px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34));
+    border-radius: 5px;
+}
+
+#now_playing_bar #equ_symbol{
+    position: absolute;
+    left: 30px;
+    top: 24px;
+    
+}
+
+/* Footer song name */
+#now_playing_bar button{
+    position: absolute;
+    width: 70px;
+    height: 24px;
+    left: 66px;
+    top: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+    background-color: white;
+}
+
+/* Footer song's music director */
+#now_playing_bar h4{
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    left: 71px;
+    top: 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer previous song button */
+#now_playing_bar #left{
+    position: absolute;
+    top: 29px;
+    left: 190px;
+}
+
+/* Footer play button */
+#now_playing_bar #play{
+    position: absolute;
+    top: 28.6px;
+    left: 252.5px;
+}
+
+/* Footer next song button */
+#now_playing_bar #right{
+    position: absolute;
+    top: 29px;
+    left: 306px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+Song details screen */
+
+#song_det_screen{
+    position: absolute;
+    width: 375px;
+    height: 721px;
+    left: 500px;
+    top: 760px;
+    background: linear-gradient(180deg, #00A3FF 0%, #022031 100%);
+    box-shadow: 0px -2px 70px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 35px 35px 0px 0px;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(0, -500px);
+    transition: all 0.25s ease-out;
+}
+
+/* header */
+#song_det_screen #song_view_h{
+    display: flex;
+}
+
+/* Back button */
+#song_det_screen #song_view_h #back_button{
+    position: absolute;
+    width: 9.62px;
+    height: 16.33px;
+    left: 30px;
+    top: 30px;    
+    border: none;
+    background-color: #00A3FF;
+}
+
+/* Slider */
+#song_det_screen #song_view_h #slide{
+    position: absolute;
+    width: 102px;
+    height: 8px;
+    left: 137px;
+    top: 35px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 35px;   
+}
+
+/* Equilizer symbol */
+#song_det_screen #song_view_h #equllizer{
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 322px;
+    top: 31px;  
+}
+
+/* Horizontal song list */
+#main_list #song_list{
+    display: flex;
+    list-style: none;
+}
+
+#main_list #song_list li:nth-child(1) img{
+    position: absolute;
+    width: 131px;
+    height: 131px;
+    left: -73px;
+    top: 151px;
+    border-radius: 10px;
+}
+
+#main_list #song_list li:nth-child(2) img{
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    left: 85px;
+    top: 120px; 
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 12px;
+}
+
+#main_list #song_list li:nth-child(3) img{
+    position: absolute;
+    width: 131px;
+    height: 131px;
+    left: 318px;
+    top: 151px;
+    border-radius: 10px;
+}
+
+/* Now playing song details */
+#song_det_screen #main_song{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 113px;
+    top: 352px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;   
+}
+
+/* Now playing song's music director */
+#song_det_screen #main_song_md{
+    position: absolute;
+    width: 48px;
+    height: 15px;
+    left: 165px;
+    top: 377px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Favourite button */
+#song_det_screen #fav{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 308px;
+    top: 417px;  
+}
+
+#song_det_screen #fav_checked{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 308px;
+    top: 417px; 
+    opacity: 0;
+    transition: all 0.2s ease; 
+}
+
+/* Time bar */
+#song_det_screen #t_bar{
+    position: absolute;
+    width: 298px;
+    height: 15px;
+    left: 40px;
+    top: 473px;      
+}
+
+/* Starting time */
+#song_det_screen #start{
+    position: absolute;
+    width: 24px;
+    height: 15px;
+    left: 43px;
+    top: 492px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.5);  
+}
+
+/* Ending time */
+#song_det_screen #end{
+    position: absolute;
+    width: 29px;
+    height: 15px;
+    left: 306px;
+    top: 492px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Controls */
+#song_det_screen #controls{
+    list-style: none;
+}
+
+/* Previous song button */
+#song_det_screen #controls li:nth-child(1){
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 40px;
+    top: 536px;  
+}
+/* Play button */
+#song_det_screen #controls li:nth-child(2){
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    left: 137px;
+    top: 508px;
+}
+/* Next song button */
+#song_det_screen #controls li:nth-child(3){
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 287px;
+    top: 536px;    
+}
+
+/* Share button */
+#song_det_screen #share{
+    position: absolute;
+    left: 56px;
+    right: 298px;
+    top: 652px;
+    bottom: 43.17px;
+}
+
+/* Shuffle button */
+#song_det_screen #shuffle{
+    position: absolute;
+    left: 300px;
+    right: 51px;
+    top: 654px;
+    bottom: 44.54px;  
+}
